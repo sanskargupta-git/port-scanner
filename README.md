@@ -1,24 +1,18 @@
-# 🔍 Port Scanner
+# 🔍 Port Scanner (Cybersecurity Tool)
 
-A simple, fast, multi-threaded port scanner written in Python. This tool scans the most common ports (1–1024) and reports open ones.
+A fast, multi-threaded port scanner built in Python. Designed for ethical hackers and security enthusiasts to scan open ports on a target IP.
 
 ## 🚀 Features
 
-- Scans ports 1 to 1024
-- Uses multi-threading for high speed
-- Built with Python `socket` and `threading`
-- Clean, minimal CLI output
+- Scans a custom range of ports (default: 1–1024)
+- Multi-threaded for high-speed scanning
+- Saves open ports to a file
+- Command-line usage with flags
+- Lightweight (no external libraries)
 
-## 💡 How It Works
-
-- Creates a socket connection to each port on the target IP
-- If the port is open, it reports it
-- Uses one thread per port for faster scanning
-
-## 🖥️ Usage
+## 📦 Installation
 
 ```bash
-$ python port_scanner.py
-Enter target IP: scanme.nmap.org
-[+] Port 22 is OPEN
-[+] Port 80 is OPEN
+git clone https://github.com/sanskargupta-git/port-scanner.git
+cd port-scanner
+python port_scanner.py --help
